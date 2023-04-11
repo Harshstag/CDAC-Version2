@@ -264,13 +264,13 @@ def gen2():
         if obj1 in cookable:
             sen1 = n1 + " " + obj1 + " " + c_v1
             dep_obj = dep_obj_cookable()
-            ans  = conj + " " + dc + " " + dep_obj + " है  |"
+            ans  = conj + " " + " " + "वह" + " " + dep_obj + " है  |"
             full_sen = n1 + " " + obj1 + " " + c_v1 + " " + ans
             
         elif obj1 in playable:
             sen1 = n1 + " " + obj1 + " " + p_v1
             dep_obj = dep_obj_playable()
-            ans = conj + " " + dc + " " + dep_obj + " है |"
+            ans = conj + " " + " " + "वह" + " " + " " + dep_obj + " है |"
             full_sen = n1 + " " + obj1 + " " + p_v1  + " " + ans
 
         elif obj1 in drinkable:
