@@ -553,11 +553,15 @@ def gen2():
 
         elif obj1 in drinkable:
             if conj=='इसलिए':
+                dep_obj = i_dep_obj_drinkable()
+
                 if n1 in mname: 
                     d_v1 = i_pn_m()
                 else:
                     d_v1 = i_pn_f()
             else:
+                dep_obj = dep_obj_drinkable()
+
                 if n1 in mname:
                     d_v1 = m_drink_verbs()
                 elif n1 in fname:
@@ -565,7 +569,6 @@ def gen2():
 
 
             sen1 = n1 + " " + obj1 + " " + d_v1
-            dep_obj = dep_obj_drinkable()
             ans  = conj + " " + "वह" + " " + dep_obj + dep_verb
             full_sen = n1 + " " + obj1 + " " + d_v1 + " " + ans
 
@@ -573,13 +576,16 @@ def gen2():
 
             #--------------------------------------------------------------------------------------------------------------------------------------
 
-
+        # 15 april part 2 
         elif obj1 in watchable:
             if conj=='इसलिए':
+                dep_obj = i_dep_obj_drinkable()
                 obj1 = "दिन भर" + " " + obj1
                 if n1 in mname: 
                     w_v1 = i_dk_m()
                 else:
+                    dep_obj = dep_obj_drinkable()
+
                     w_v1 = i_dk_f()
             else:
                 if n1 in mname:
@@ -596,7 +602,6 @@ def gen2():
 
 
             sen1 = n1 + " " + obj1 + " " + w_v1
-            dep_obj = dep_obj_watchable()
             ans  = conj + " " + "वह" + " " + dep_obj + dep_verb
             full_sen = n1 + " " + obj1 + " " + w_v1 + " " + ans
 
