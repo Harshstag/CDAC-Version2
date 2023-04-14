@@ -285,13 +285,15 @@ def gen1():
         s2 = mk_sen2() #2nd Sentence making
         conj = conjunction() # selecting conjuction
 
-        f_s = s1 + " " + conj + " " + s2 + " |"
+        
 
         # ans1 is first independent clause
         ans1 = s1 
         
         #ans2 is second independent clause
-        ans2 = s2
+        ans2 = s2 + " |"
+
+        f_s = s1 + " " + conj + " " + ans2
 
         #res2 = sum([i.strip(string.punctuation).isalpha() for i in ans2.split()])
         return [f_s, ans1, ans2, s1, s2, conj]
