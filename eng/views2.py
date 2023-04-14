@@ -579,15 +579,15 @@ def gen2():
         # 15 april part 2 
         elif obj1 in watchable:
             if conj=='इसलिए':
-                dep_obj = i_dep_obj_drinkable()
+                dep_obj = i_dep_obj_watchable()
                 obj1 = "दिन भर" + " " + obj1
                 if n1 in mname: 
                     w_v1 = i_dk_m()
                 else:
-                    dep_obj = dep_obj_drinkable()
-
                     w_v1 = i_dk_f()
             else:
+                dep_obj = i_dep_obj_watchable()
+
                 if n1 in mname:
                     w_v1 = m_watch_verbs()
                 elif n1 in fname:
