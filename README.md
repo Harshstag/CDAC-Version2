@@ -2,9 +2,11 @@
 version 1 hrs
 Django framework has been used to integrate html+css+javascript(FRONTEND) with python(BACKEND).
 Details of Django setup and files related to "Clause Simulator" is provided in this document.
+
 ---------------------------------------------------------------------------------------------------
 The following commands are used to setup and start the server.
 Steps:
+``````````
 1) Install python 
 
 We create virtual environment wrapper
@@ -26,8 +28,9 @@ Run the server
 9) python manage.py runserver
    python manage.py startapp eng
 ````````
+```````````````
 ------------------------------------------------------------------------------------------------------
-
+`````````````````
 There are two exercises in this clause simulator.
 1) Identification of Independent Clause
    
@@ -75,3 +78,4 @@ Sentence Format: independent clause+ conjunction +,+ dependent clause
                  conjunction+ dependent clause+,+ independent clause
 
 Conjunction: because,since,as,after,later,although
+``````````````````````
