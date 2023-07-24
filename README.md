@@ -3,9 +3,8 @@ version 1 hrs
 Django framework has been used to integrate html+css+javascript(FRONTEND) with python(BACKEND).
 Details of Django setup and files related to "Clause Simulator" is provided in this document.
 
-
- <img src="img/Screenshot (103).png"style="width:50%"/>
-  <img src="Screenshot (194).png"style="width:50%"/>
+<img src="img/Screenshot (103).png"style="width:50%"/>
+<img src="Screenshot (194).png"style="width:50%"/>
 ---------------------------------------------------------------------------------------------------
 The following commands are used to setup and start the server.
 Steps:
